@@ -9,7 +9,7 @@ APP_URL = "https://app.edgeiq.dev"
 [[d1_databases]]
 binding = "DB"
 database_name = "edgeiq-db"
-database_id = "YOUR_D1_DATABASE_ID"
+database_id = "46b6caea-181f-4635-96de-94020bef7209"
 
 [[kv_namespaces]]
 binding = "KV"
