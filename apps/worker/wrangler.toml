@@ -13,7 +13,7 @@ database_id = "46b6caea-181f-4635-96de-94020bef7209"
 
 [[kv_namespaces]]
 binding = "KV"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "70e4aa6167bf421c994919a114331707"
 
 [triggers]
 crons = ["0 7 * * *"]
