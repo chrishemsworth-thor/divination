@@ -1,0 +1,23 @@
+name = "edgeiq-worker"
+main = "src/index.ts"
+compatibility_date = "2024-07-18"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+APP_URL = "https://app.edgeiq.dev"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "edgeiq-db"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[triggers]
+crons = ["0 7 * * *"]
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.ts"]

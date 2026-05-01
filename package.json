@@ -1,0 +1,20 @@
+{
+  "name": "edgeiq",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev:worker": "pnpm --filter worker dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "deploy:worker": "pnpm --filter worker deploy",
+    "deploy:web": "pnpm --filter web deploy",
+    "migrate": "pnpm --filter worker migrate"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
