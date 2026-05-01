@@ -4,7 +4,7 @@ compatibility_date = "2024-07-18"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-APP_URL = "https://app.edgeiq.dev"
+APP_URL = "https://hiaisha.com"
 
 [[d1_databases]]
 binding = "DB"

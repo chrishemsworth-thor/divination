@@ -39,7 +39,7 @@ function StatusBadge({ status }: { status: Site['status'] }) {
 }
 
 function SetupInstructions({ site }: { site: Site }) {
-  const workerUrl = `${site.cname_slug}.edgeiq.workers.dev`;
+  const workerUrl = `divination.hiaisha.com`;
 
   if (site.tracking_method === 'pixel') {
     const pixelSrc = `https://analytics.${site.domain}/pixel.gif?path=PAGE_PATH&ref=REFERRER`;

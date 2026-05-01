@@ -14,7 +14,7 @@ EdgeIQ uses Cloudflare Workers for tracking — the analytics endpoint lives at 
 
 1. Customer adds a DNS CNAME record pointing a subdomain at the EdgeIQ Worker:
    ```
-   analytics.clientsite.com → edgeiq-worker.your-account.workers.dev
+   analytics.clientsite.com → divination.hiaisha.com
    ```
 2. Customer adds a single `<img>` tag to their site:
    ```html
@@ -28,7 +28,7 @@ Works on any platform that allows adding an HTML tag: WordPress, Shopify, Webflo
 ### Method B — Lightweight JS snippet (optional)
 
 ```html
-<script src="https://edgeiq-worker.your-account.workers.dev/edgeiq.js" async></script>
+<script src="https://divination.hiaisha.com/edgeiq.js" async></script>
 ```
 
 Enables richer data: SPA route tracking, deeper referrer detection. Still zero cookies, zero third-party domains in the network tab.
@@ -130,7 +130,7 @@ pnpm deploy:worker
 
 ```bash
 cd apps/web
-VITE_API_URL=https://your-worker.workers.dev pite build
+VITE_API_URL=https://divination.hiaisha.com pite build
 wrangler pages deploy dist --project-name edgeiq-dashboard
 ```
 
@@ -146,7 +146,7 @@ See `.env.example` for the full list. All sensitive values (`STRIPE_*`, `RESEND_
 
 ### WordPress
 
-1. Add CNAME record: `analytics.yourdomain.com → your-worker.workers.dev`
+1. Add CNAME record: `analytics.yourdomain.com → divination.hiaisha.com`
 2. Install **Insert Headers and Footers** plugin
 3. Add to footer section:
    ```html
